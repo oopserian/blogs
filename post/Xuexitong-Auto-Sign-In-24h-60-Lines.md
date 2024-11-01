@@ -15,7 +15,7 @@ pin: false
 hide: false
 
 ---
-```
+```shell
 抓包工具:Fiddler
 语言:Python 库:requests
 测试手机:夜神模拟器
@@ -24,13 +24,13 @@ hide: false
 
 第一次发长文， #第一行代码# 本人只是个学习一个月的萌新，所有知识源于GitHub，百度，b站，学校，有很多地方不懂，不要痛击我一个萌新🥹本教程只是交流学习，希望有大佬指点错误的地方
 
-## 首先
+## 分析
 我们自己在学习通里创建一个课程，方便测试。自己发布一个签到信息，然后抓包自己签到的数据
 ![签到成功的数据](/images/2020-05-08/IMG_1011.JPG)
 有右边那些数据，一个一个看，找到了一个返回success的，其他的只是页面源代码，还有一些我也不知道
 ![返回success数据](/images/2020-05-08/IMG_1012.JPG)
 复制它的URL在浏览器里打开，发现他有这么长的地址，经过删减，有些不需要的
-```
+```shell
 https://mobilelearn.chaoxing.com/pptSign/stuSignajax?
 activeld=234452314
 &uid=79896801&clientip=&useragent=&latitude
@@ -38,7 +38,7 @@ activeld=234452314
 &name=%5%88%98%4%BF%8А%Е9%BE%99
 ```
 删减过后，发现只需要这么一点也能打
-```
+```shell
 https://mobilelearn.chaoxing.com/pptSign/stuSignajax?
 activeld=234452314
 ```
@@ -70,25 +70,28 @@ https://mooc1-api.chaoxing.com/mycourse/backclazzdata?
 ```
 发现只有这么长
 ![Node简介](/images/2020-05-08/IMG_1021.JPG)
+
+## 编码
 浏览器打开看到课程所有信息了，这个课程URL不需要其他参数，那就从这个URL开始吧。
 所有想要的参数都有了，就开始码代码吧。
-```
-课程列表：
+
+```shell
+#课程列表：
 https://mooc1-api.chaoxing.com/mycourse/backclazzdata?
 获取courseld=******
 获取classld=*******
 
-课程任务列表：
+#课程任务列表：
 https://mobilelearn.chaoxing.com/ppt/activeAPI/taskactivelist?
 courseld=204220874&classld=8371954
 获取activeld=*******
 
-普通签到成功：
+#普通签到成功：
 https://mobilelearn.chaoxing.com/pptSign/stuSignajax?
 activeld=220960453
 ```
 
-``` Python
+```Python
 import requests
 import json
 
@@ -127,7 +130,7 @@ def main_handler(event, context):
 ![Node简介](/images/2020-05-08/IMG_1017.JPG)
 
 写一个判断状态方法就好了，状态为1就执行签到，为2就终止就好了
-``` Python
+```Python
 for x in range(0, (len(class_id))):
     class_Name = class_name[x]
     courseID = class_course[x]
@@ -153,6 +156,8 @@ for x in range(0, (len(class_id))):
         except Exception:
             pass
 ```
+
+## 最后
 然后自己发布一个签到，运行代码，ok～
 带进函数云～
 ![Node简介](/images/2020-05-08/IMG_1026.JPG)
