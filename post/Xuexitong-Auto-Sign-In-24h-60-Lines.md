@@ -46,7 +46,7 @@ activeld=234452314
 后面那串数字就是我们需要的了，activeID翻译过来不就是活动ID吗，我们只需要找到活动ID就好了啊，返回到活动的列表
 ![活动列表](/images/2020-05-08/IMG_1015.JPG)
 抓活动列表的包，找这里面，看哪个里面有活动ID就好了
-```
+```shell
 https://mobilelearn.chaoxing.com/ppt/activeAPI/taskactivelist?
 courseld=212107435&classld=26413158&uid=79896801&cpi=65351
 848&token=4faa8662c59590c6f43ae9fe5b002b42&_time=158892641
@@ -57,7 +57,7 @@ courseld=212107435&classld=26413158&uid=79896801&cpi=65351
 ![活动列表json](/images/2020-05-08/IMG_1017.JPG)
 
 复制刚刚那个活动API接口，打开网页，删减一些也能打开
-```
+```shell
 https://mobilelearn.chaoxing.com/ppt/activeAPI/taskactivelist?
 courseld=204220874&classld=8371954
 ```
@@ -65,7 +65,7 @@ courseld=204220874&classld=8371954
 返回到课程列表里去找找有没有这两个数据
 ![Node简介](/images/2020-05-08/IMG_1019.JPG)
 抓包发现就几个，一个一个看了后，发现只有其中一个json文件里有我们想要的数据，对应的ID码，刚好和我们的courseID和classID。然后复制URL出来
-```
+```shell
 https://mooc1-api.chaoxing.com/mycourse/backclazzdata?
 ```
 发现只有这么长
@@ -91,7 +91,7 @@ https://mobilelearn.chaoxing.com/pptSign/stuSignajax?
 activeld=220960453
 ```
 
-```Python
+```python
 import requests
 import json
 
@@ -130,7 +130,7 @@ def main_handler(event, context):
 ![Node简介](/images/2020-05-08/IMG_1017.JPG)
 
 写一个判断状态方法就好了，状态为1就执行签到，为2就终止就好了
-```Python
+```python
 for x in range(0, (len(class_id))):
     class_Name = class_name[x]
     courseID = class_course[x]
