@@ -4,7 +4,7 @@ title: 九鼎山
 
 description: 记录下我的第一次徒步露营
 
-cover: /images/2020-05-08/IMG_1027.JPG
+cover: /images/2024-06-23/DSC_8856.webp
 
 date: 2024-06-23
 
