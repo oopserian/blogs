@@ -80,7 +80,7 @@ courseld=204220874&classld=8371954
 
 返回到课程列表里去找找有没有这两个数据
 
-![Node简介](/images/2020-05-08/IMG_1019.JPG)
+![图片](/images/2020-05-08/IMG_1019.JPG)
 
 抓包发现就几个，一个一个看了后，发现只有其中一个json文件里有我们想要的数据，对应的ID码，刚好和我们的courseID和classID。然后复制URL出来
 
@@ -90,7 +90,7 @@ https://mooc1-api.chaoxing.com/mycourse/backclazzdata?
 
 发现只有这么长
 
-![Node简介](/images/2020-05-08/IMG_1021.JPG)
+![图片](/images/2020-05-08/IMG_1021.JPG)
 
 ## 编码
 
@@ -152,7 +152,7 @@ def main_handler(event, context):
 
 这里要弄一个检测签到的，在活动列表里有两个参数，activetype(活动类型)为2，就是签到活动。status(状态)为1就是正在进行的，状态为2就是已经结束的了
 
-![Node简介](/images/2020-05-08/IMG_1017.JPG)
+![图片](/images/2020-05-08/IMG_1017.JPG)
 
 写一个判断状态方法就好了，状态为1就执行签到，为2就终止就好了
 
@@ -189,15 +189,16 @@ for x in range(0, (len(class_id))):
 
 带进函数云～
 
-![Node简介](/images/2020-05-08/IMG_1026.JPG)
-
-![Node简介](/images/2020-05-08/IMG_1027.JPG)
+<div class="grid-images">
+    <img src="/images/2020-05-08/IMG_1026.JPG" alt="">
+    <img src="/images/2020-05-08/IMG_1027.JPG" alt="">
+</div>
 
 触发方式设置为每分钟运行一下。
 
 再发布一个签到试一下
 
-![Node简介](/images/2020-05-08/IMG_1028.JPG)
+![图片](/images/2020-05-08/IMG_1028.JPG)
 
 ## 成功！！
 
