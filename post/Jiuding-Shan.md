@@ -35,9 +35,10 @@ hide: false
 | <img src="/images/2024-06-23/good-07.png" alt="背包" style="max-width: 100px;"> | [收纳袋]防水收纳袋5L                | 0.4kg  | ¥20  |
 |  | 总计                | 4.79kg+ | ¥1558  |
 
-![所有装备](/images/2024-06-23/equip.jpg)
-
-![打包后](/images/2024-06-23/equip-pack.jpg)
+<div class="grid-images">
+    <img src="/images/2024-06-23/equip.jpg" alt="所有装备">
+    <img src="/images/2024-06-23/equip-pack.jpg" alt="打包后">
+</div>
 
 ## 进山
 
@@ -45,22 +46,25 @@ hide: false
 
 到山腰了，风景还是不错的🙂‍↔️
 
-![午后](/images/2024-06-23/IMG_0823.webp)
-
-![午后](/images/2024-06-23/DSC_8646.webp)
+<div class="grid-images">
+    <img src="/images/2024-06-23/IMG_0823.webp" alt="午后">
+    <img src="/images/2024-06-23/DSC_8646.webp" alt="午后">
+</div>
 
 经过一番努力，我们在晚上八点才抵达山顶
 （由于走了一条远路，一度担心要在树林里过夜😅）
 
-![傍晚](/images/2024-06-23/DSC_8720.webp)
-
-![傍晚](/images/2024-06-23/DSC_8767.webp)
+<div class="grid-images">
+    <img src="/images/2024-06-23/DSC_8720.webp" alt="傍晚">
+    <img src="/images/2024-06-23/DSC_8767.webp" alt="傍晚">
+</div>
 
 扎完营时已是晚上九点过后
 
-![夜晚](/images/2024-06-23/IMG_0829.webp)
-
-![夜晚](/images/2024-06-23/P20240622-220756.webp)
+<div class="grid-images">
+    <img src="/images/2024-06-23/IMG_0829.webp" alt="夜晚">
+    <img src="/images/2024-06-23/P20240622-220756.webp" alt="夜晚">
+</div>
 
 太累了🥹，随便吃了点东西就睡了
 
@@ -70,9 +74,10 @@ hide: false
 
 早上5点过🥶就起来看日出🤓
 
-![晨夕](/images/2024-06-23/DSC_8856.webp)
-
-![晨夕](/images/2024-06-23/CRnall_20240623_060350083.webp)
+<div class="grid-images">
+    <img src="/images/2024-06-23/DSC_8856.webp" alt="晨夕">
+    <img src="/images/2024-06-23/CRnall_20240623_060350083.webp" alt="晨夕">
+</div>
 
 ## 总结
 
