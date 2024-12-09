@@ -16,6 +16,8 @@ hide: false
 
 ---
 
+> 本文内容由我原创，最初发布在 [酷安](https://www.coolapk.com/feed/18691412?shareKey=YWNhZjk2ODZkYzY4Njc1NjUwODY~&shareUid=643343&shareFrom=com.coolapk.app_5.8.3) 平台
+
 第一次发长文， #第一行代码# 本人只是个学习一个月的萌新，所有知识源于GitHub，百度，b站，学校，有很多地方不懂，不要痛击我一个萌新🥹本教程只是交流学习，希望有大佬指点错误的地方
 
 ## 准备
