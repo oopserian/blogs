@@ -4,7 +4,7 @@ title: 2025年8月随机记录
 
 description: 记录八月里的琐碎日常和随想
 
-cover: /images/2025-08-31/IMG_5925.HEIC
+cover: /images/2025-08-31/IMG_5620.webp
 
 date: 2025-08-31
 
