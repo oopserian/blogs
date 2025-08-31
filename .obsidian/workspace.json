@@ -11,10 +11,12 @@
             "id": "b87d6cf5207a09f0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.6"
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Release Notes 1.7.6"
             }
           }
         ]
@@ -158,7 +160,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8d2540cad3a52ce2",
+  "active": "b87d6cf5207a09f0",
   "lastOpenFiles": [
     "images/2024-06-23/DSC_8518大.jpeg",
     "images/2024-06-23/CRnall_20240623_061155813.webp",
